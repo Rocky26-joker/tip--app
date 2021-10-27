@@ -1,0 +1,156 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.rml {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-container {
+  width: 40rem;
+  height: 22rem;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+}
+#inp1 {
+  background-color: hsl(175, 13%, 84%);
+  border-style: none;
+  border-radius: 3px;
+  width: 16.5rem;
+  padding: 2px;
+}
+button {
+  width: 5rem;
+  border: none;
+  border-radius: 3px;
+  background-color: hsl(183, 100%, 15%);
+  color: aliceblue;
+  font-size: 12px;
+}
+
+.chn {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#inp2 {
+  background-color: hsl(175, 13%, 84%);
+  border-style: none;
+  border-radius: 3px;
+  width: 16.5rem;
+  padding: 2px;
+}
+p {
+  font-size: 14px;
+}
+.second-cont {
+  width: 20rem;
+  height: 19rem;
+  background-color: hsl(183, 100%, 15%);
+  margin-top: 17px;
+  margin-left: 23px;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 580px) {
+  .child-container {
+    display: inline-block;
+    height: 47rem;
+  }
+  .chn {
+    margin-left: 35px;
+  }
+  #inp1 {
+    width: 18.5rem;
+  }
+  #inp2 {
+    width: 18.5rem;
+  }
+  .second-cont {
+    padding: 15px;
+  }
+  button {
+    height: 30px;
+  }
+}
+.amount {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 29px;
+}
+#amt {
+  font-size: 12px;
+  color: wheat;
+  font-weight: 800;
+}
+#rupees1 {
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+.Total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+#amt2 {
+  font-size: 12px;
+  color: wheat;
+  font-weight: 800;
+}
+#rupees2 {
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+.btns #calc {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: rgb(114, 127, 70);
+  margin-top: 50px;
+  width: 15rem;
+  padding: 7px;
+}
+#b:hover {
+  color: #ff7a59;
+  border: #ff7a59 solid 1px;
+  background: #fff;
+}
+#calc {
+  background-color: transparent;
+  border: 2px solid #2e2e2e;
+  cursor: pointer;
+  letter-spacing: 0.2125rem;
+  line-height: 1;
+  overflow: hidden;
+  padding: 20px 30px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+    border 1s cubic-bezier(0.19, 1, 0.22, 1),
+    color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  user-select: none;
+}
+#calc:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #fff;
+  box-shadow: 0 0 5px rgba(255, 245, 245, 0.8);
+}
+
+#calc:hover {
+  color: #fff;
+}
+#calc:hover {
+  transform: translateX(5px);
+}

@@ -7,7 +7,7 @@ function calculateTip() {
   let persons = document.querySelector('#inp2').value;
   console.log(tip)
   if (amount === "") {
-    alert('HaramZada Bill Na deiki kn basipadichu');
+    alert('enter some valid amount');
     return;
   }
   if (persons === "1") {
@@ -21,7 +21,7 @@ function calculateTip() {
   total = Math.round(total * 100) / 100;
   total = total.toFixed(2);
   console.log(total);
-  document.querySelector('#rupees1').style.display = 'block';
+  // document.querySelector('#rupees1').style.display = 'block';
   document.querySelector('#rupees1').innerHTML = total;
 
   let tp = amount / persons;
